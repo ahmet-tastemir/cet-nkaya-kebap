@@ -1,0 +1,214 @@
+/* GENEL */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom right, #0a1d3f, #003366, #3399ff); /* Gece mavisi → Mavi → Açık mavi */
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 51, 102, 0.9);
+  padding: 10px 20px;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.logo {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #00cfff;
+}
+
+/* NAV LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.nav-links li a:hover {
+  color: #00cfff;
+}
+
+/* ÜST BUTONLAR */
+.top-buttons {
+  display: flex;
+  gap: 10px;
+}
+.top-btn {
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.contact-btn {
+  background: #3399ff;
+}
+.contact-btn:hover {
+  background: #66b3ff;
+}
+.location-btn {
+  background: #0a1d3f;
+}
+.location-btn:hover {
+  background: #003366;
+}
+
+/* SOSYAL İKONLAR */
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.social-icons img {
+  width: 25px;
+  height: 25px;
+  filter: brightness(0) invert(1);
+  transition: 0.3s;
+}
+.social-icons img:hover {
+  filter: brightness(1) saturate(1.5);
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1617196039987-615b46ae0a1a') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.hero-content h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 8px #000;
+  color: #a3d5ff; /* Açık mavi */
+}
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 4px #000;
+}
+.btn {
+  background: linear-gradient(45deg, #3399ff, #66b3ff);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.btn:hover {
+  background: linear-gradient(45deg, #66b3ff, #3399ff);
+}
+
+/* BÖLÜMLER */
+.section {
+  padding: 90px 20px;
+  text-align: center;
+}
+.section h2 {
+  color: #00cfff;
+  margin-bottom: 20px;
+}
+
+/* MENÜ */
+.menu-list {
+  list-style: none;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 0;
+}
+.menu-list li {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  margin-bottom: 12px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.menu-list li:hover {
+  background: rgba(255,255,255,0.2);
+  transform: scale(1.02);
+}
+
+/* İLETİŞİM */
+.call-btn {
+  background: linear-gradient(45deg, #25d366, #128c7e);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.call-btn:hover {
+  background: linear-gradient(45deg, #128c7e, #25d366);
+}
+
+/* FOOTER */
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* FOUNDER */
+.founder {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  color: #cbeff7;
+  font-weight: bold;
+  font-size: 0.9em;
+  z-index: 1000;
+}
+
+/* MOBİL */
+@media (max-width: 900px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .top-buttons {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .social-icons {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .hero-content h1 {
+    font-size: 2.2em;
+  }
+}
